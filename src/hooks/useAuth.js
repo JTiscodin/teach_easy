@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function useAuth() {
   const router = useRouter();
   const [userId, setUserId] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isTutor, setIsTutor] = useState(true);
 
   const login = useCallback((uid, role) => {
